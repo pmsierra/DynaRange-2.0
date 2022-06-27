@@ -1,0 +1,176 @@
+.white_color {
+	-fx-background-color: white;
+}
+
+.border_color {
+	-fx-background-color: #3d5663;
+}
+
+.blue_color {
+	-fx-background-color: #e8f1f9;
+}
+
+.charging_screen_color {
+	-fx-background-color: linear-gradient(to top right, #1d70b7, #114776);
+}
+
+.charging_screen_bg_color {
+	-fx-background-color: #f2f2f2;
+}
+
+.menu_bar_color {
+	-fx-background-image: url("src.IconPictures/UpperBarBig.png");
+}
+
+.menu_mediumBar_color {
+	-fx-background-image: url("src.IconPictures/UpperBarMedium.png");
+}
+
+.menu_ClientBar_color {
+	-fx-background-image: url("src.IconPictures/ClientUpperBarBig.png");
+}
+
+.menu_buttom {
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+}
+
+.menu_buttom:hover {
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+	-fx-text-fill: white;
+}
+
+.menu_buttom:focused {
+	-fx-background-color: #325c6a;
+	-fx-text-fill: white;
+}
+
+.starter_buttom {
+	-fx-background-color: #4f90a5;
+	-fx-font-weight: bold;
+	-fx-font-size: 20;
+	-fx-text-fill: rgba(0,0,0,0.7);
+}
+
+.starter_buttom:hover {
+	-fx-background-color: white;
+	-fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-text-fill: #4f90a5;
+    -fx-border-color: #4f90a5;
+    -fx-border-width: 4;
+    -fx-border-radius: 2;
+}
+
+/*Starter small button style*/
+.starter_small_buttom {
+	-fx-text-fill: #4f90a5;
+	-fx-font-size: 16;
+	-fx-font-weight: bold;
+	-fx-background-radius: 20;
+}
+.starter_small_buttom:hover {
+	-fx-text-fill: #3e7384;
+}
+
+/*Features button style*/
+.features_button {
+	-fx-background-color: rgb(239,239,239);
+	-fx-border-color: #4f90a5;
+	-fx-font-weight: bold;
+	-fx-font-size: 18;
+	-fx-border-width: 2;
+    -fx-border-radius: 1.5;
+	
+}
+
+/*Log out button style*/
+.log_out_buttom {
+	-fx-text-fill: rgba(255,255,255,1);
+	-fx-background-color: linear-gradient(to top right, #1d70b7, #134e81);
+	-fx-font-size: 14;
+	-fx-font-weight: bold;
+	-fx-border-radius: 3;
+}
+.log_out_buttom:hover {
+	-fx-text-fill: white;
+	-fx-background-color: #3e7384;
+	-fx-border-color: white;
+	-fx-border-width: 3;
+	-fx-background-radius: 3;
+}
+
+/*Tree table view style*/
+.list-view, .split-pane { 
+	-fx-background-insets: 0; -fx-padding: 0;
+}
+.list-view, .scroll-bar:horizontal .increment-arrow,
+.list-view, .scroll-bar:horizontal .decrement-arrow,
+.list-view, .scroll-bar:horizontal .increment-button,
+.list-view, .scroll-bar:horizontal .decrement-button {
+    -fx-padding:0;
+}
+.scroll-bar{
+    -fx-background-color: white;
+}
+.scroll-bar:vertical .track {
+    -fx-background-color: white;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em; 
+}
+.scroll-bar:vertical .track-background {
+    -fx-background-color: white;
+    -fx-background-insets:  0;
+    -fx-background-radius: 0em;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgb(205,205,205);
+    -fx-background-insets: 0 2 0 2;
+    -fx-background-radius: 0em;
+}
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgb(215,215,215); 
+}
+.scroll-bar:vertical .thumb:pressed {
+    -fx-background-color: rgb(96,96,96);    
+}
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;  
+    -fx-background-radius: 0em;
+    -fx-padding: 5 5 5 5;
+}
+.scroll-bar:vertical .increment-arrow {
+    -fx-shape: "M4,17v-2.889l4.124-3.86l4.125,3.86V17l-4.125-3.375L4,17z";
+    -fx-padding: 0.25em;
+    -fx-rotate: 180;
+}
+.scroll-bar:vertical .decrement-arrow {
+    -fx-shape: "M4,17v-2.889l4.124-3.86l4.125,3.86V17l-4.125-3.375L4,17z";
+    -fx-padding: 0.25em;
+}
+.scroll-bar:vertical:focused {
+    -fx-background-color: -fx-box-border,-fx-box-border,white;    
+}
+.tree-table-row-cell:selected {
+	-fx-background-color: rgba(79, 144, 165, 0.5);
+}
+
+/*Line chart style*/
+.chart-series-line {    
+    -fx-stroke-width: 2px;
+    -fx-effect: null;
+} 
+.default-color0.chart-series-line { -fx-stroke: #4f90a5; }
+.default-color0.chart-line-symbol { -fx-background-color: #4f90a5, white;}
+
+/*Label style*/
+.label-style label {
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+}
+.tree-table-cell {
+    -fx-alignment: center ;
+}
+
+

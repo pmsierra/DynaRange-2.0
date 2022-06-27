@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="757.0" prefWidth="1236.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynarange2.caseConfigController">
+   <children>
+      <ImageView fx:id="caderaIzq" fitHeight="28.0" fitWidth="29.0" layoutX="984.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="757.0" prefWidth="627.0" styleClass="blue_color" stylesheets="@stylesheet.css">
+         <children>
+            <VBox alignment="CENTER" prefHeight="83.0" prefWidth="627.0" styleClass="charging_screen_color">
+               <children>
+                  <Label text="DynaRange" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="Configuracion del caso" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <JFXButton fx:id="volver_button" layoutX="32.0" layoutY="695.0" onMouseClicked="#volver" prefHeight="34.0" prefWidth="87.0" styleClass="charging_screen_color" text="Volver" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="6.0" layoutY="274.0" text="Notas adicionales del caso:" textFill="#000000b0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="193.0" text="Nombre del caso:" textFill="#000000b0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="96.0" text="Articulación seleccionada:" textFill="#0d0d0db0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="guardarCaso_button" alignment="TOP_LEFT" layoutX="243.0" layoutY="551.0" onMouseClicked="#guardarCaso" prefHeight="44.0" prefWidth="370.0" styleClass="charging_screen_color" text="Guardar caso" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@src.IconPictures/address-book.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXTextArea fx:id="notas_textArea" layoutX="10.0" layoutY="309.0" prefHeight="162.0" prefWidth="604.0" />
+            <Label fx:id="nombreNodo_label" layoutX="10.0" layoutY="131.0" prefHeight="44.0" prefWidth="514.0" textFill="#000000b0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="nombre_textArea" layoutX="10.0" layoutY="227.0" prefHeight="23.0" prefWidth="604.0" />
+         </children>
+      </Pane>
+      <ImageView fx:id="bodyImg" fitHeight="693.0" fitWidth="508.0" layoutX="702.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/proMotionBody.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="munecaDchNode" fitHeight="28.0" fitWidth="29.0" layoutX="781.0" layoutY="322.0" onMouseClicked="#munecaDchSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="codoDchNode" fitHeight="28.0" fitWidth="29.0" layoutX="825.0" layoutY="254.0" onMouseClicked="#codoDchSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hombroDchNode" fitHeight="28.0" fitWidth="29.0" layoutX="859.0" layoutY="167.0" onMouseClicked="#hombroDchSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cervicalNode" fitHeight="28.0" fitWidth="29.0" layoutX="932.0" layoutY="130.0" onMouseClicked="#cervicalSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hombroIzqNode" fitHeight="28.0" fitWidth="29.0" layoutX="1005.0" layoutY="167.0" onMouseClicked="#hombroIzqSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="codoIzqNode" fitHeight="28.0" fitWidth="29.0" layoutX="1039.0" layoutY="254.0" onMouseClicked="#codoIzqSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="munecaIzqNode" fitHeight="28.0" fitWidth="29.0" layoutX="1082.0" layoutY="322.0" onMouseClicked="#munecaIzqSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lumbarNode" fitHeight="28.0" fitWidth="29.0" layoutX="932.0" layoutY="303.0" onMouseClicked="#lumbarSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="caderaDchNode" fitHeight="28.0" fitWidth="29.0" layoutX="881.0" layoutY="322.0" onMouseClicked="#caderaDchSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rodillaDchNode" fitHeight="28.0" fitWidth="29.0" layoutX="880.0" layoutY="489.0" onMouseClicked="#rodillaDchSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tobilloDchNode" fitHeight="28.0" fitWidth="29.0" layoutX="881.0" layoutY="631.0" onMouseClicked="#tobilloDchSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tobilloIzqNode" fitHeight="34.0" fitWidth="27.0" layoutX="983.0" layoutY="631.0" onMouseClicked="#tobilloIzqSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rodillaIzqNode" fitHeight="28.0" fitWidth="29.0" layoutX="983.0" layoutY="490.0" onMouseClicked="#rodillaIzqSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="caderaIzqNode" fitHeight="28.0" fitWidth="29.0" layoutX="984.0" layoutY="322.0" onMouseClicked="#caderaIzqSelection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/dot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exitButton" fitHeight="28.0" fitWidth="40.0" layoutX="1197.0" onMouseClicked="#close_app" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/window-close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

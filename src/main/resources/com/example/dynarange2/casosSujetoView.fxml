@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="757.0" prefWidth="1236.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynarange2.casosSujetoController">
+   <children>
+      <Pane prefHeight="757.0" prefWidth="1236.0" styleClass="blue_color" stylesheets="@stylesheet.css">
+         <children>
+            <VBox alignment="CENTER" prefHeight="83.0" prefWidth="1236.0" styleClass="charging_screen_color">
+               <children>
+                  <Label text="DynaRange" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nombreSujeto_label" text="Casos del sujeto" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <JFXButton fx:id="volver_button" layoutX="10.0" layoutY="713.0" onMouseClicked="#volver" prefHeight="34.0" prefWidth="87.0" styleClass="charging_screen_color" text="Volver" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="nombreNodo_label" layoutX="10.0" layoutY="131.0" prefHeight="44.0" prefWidth="514.0" textFill="#000000b0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXTreeTableView fx:id="casos_treeView" editable="true" layoutX="17.0" layoutY="89.0" onMousePressed="#seleccionarCaso2" prefHeight="575.0" prefWidth="1200.0" styleClass="list-view">
+               <columnResizePolicy>
+                  <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </JFXTreeTableView>
+            <JFXButton fx:id="borrarCaso_button" alignment="TOP_LEFT" layoutX="128.0" layoutY="672.0" onMouseClicked="#borrarCaso" prefHeight="46.0" prefWidth="181.0" styleClass="charging_screen_color" text="Borrar Caso" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="50.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@src.IconPictures/user-slash.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="nuevoCaso_button" alignment="TOP_LEFT" layoutX="711.0" layoutY="672.0" onMouseClicked="#nuevoCaso" prefHeight="46.0" prefWidth="181.0" styleClass="charging_screen_color" text="Nuevo Caso" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="50.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@src.IconPictures/user-plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="seleccionarCaso_button" alignment="TOP_LEFT" layoutX="925.0" layoutY="672.0" onMouseClicked="#seleccionarCaso" prefHeight="46.0" prefWidth="194.0" styleClass="charging_screen_color" text="Seleccionar Caso" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="50.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@src.IconPictures/address-card.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fx:id="exitButton" fitHeight="28.0" fitWidth="40.0" layoutX="1199.0" layoutY="1.0" onMouseClicked="#close_app" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@src.IconPictures/window-close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

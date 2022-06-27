@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="startUpMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynarange2.mainPaneController">
+   <children>
+      <Pane fx:id="logInPane" layoutX="437.0" prefHeight="734.0" prefWidth="644.0">
+         <children>
+            <Label layoutX="210.0" layoutY="107.0" prefHeight="60.0" prefWidth="211.0" styleClass="label-style" stylesheets="@stylesheet.css" text="Seleccione una opción:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="exitButton" fitHeight="28.0" fitWidth="40.0" layoutX="598.0" layoutY="7.0" onMouseClicked="#close_app" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@src.IconPictures/window-close.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="nuevo_sujeto" buttonType="RAISED" layoutX="14.0" layoutY="412.0" onMouseClicked="#crear_sujeto" prefHeight="72.0" prefWidth="232.0" styleClass="charging_screen_color" stylesheets="@stylesheet.css" text="Añadir nuevo sujeto" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="historico_sujeto" buttonType="RAISED" layoutX="366.0" layoutY="412.0" onMouseClicked="#abrir_historico" prefHeight="72.0" prefWidth="232.0" styleClass="charging_screen_color" stylesheets="@stylesheet.css" text="Histórico de sujetos" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="173.0" fitWidth="232.0" layoutX="14.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@src.IconPictures/user-plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="168.0" fitWidth="226.0" layoutX="369.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@src.IconPictures/user-friends.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="preferencias_button" alignment="TOP_LEFT" layoutX="436.0" layoutY="658.0" onMouseClicked="#abrirPreferencias" prefHeight="46.0" prefWidth="181.0" styleClass="charging_screen_color" stylesheets="@stylesheet.css" text="Preferencias" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="50.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@src.IconPictures/user-cog.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fitHeight="514.0" fitWidth="467.0" layoutX="20.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src.IconPictures/openpose2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="119.0" layoutY="626.0" prefHeight="60.0" prefWidth="226.0" text="DynaRange Support App" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

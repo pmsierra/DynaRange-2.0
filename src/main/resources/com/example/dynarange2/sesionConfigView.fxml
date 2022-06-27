@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="757.0" prefWidth="1236.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynarange2.sesionConfigController">
+   <children>
+      <Pane prefHeight="757.0" prefWidth="1236.0" styleClass="blue_color" stylesheets="@stylesheet.css">
+         <children>
+            <VBox alignment="CENTER" prefHeight="83.0" prefWidth="1236.0" styleClass="charging_screen_color">
+               <children>
+                  <Label text="DynaRange" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sesionNumber_label" text="Sesión" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <JFXButton fx:id="volver_button" layoutX="10.0" layoutY="713.0" onMouseClicked="#volver" prefHeight="34.0" prefWidth="87.0" styleClass="charging_screen_color" text="Volver" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="empezarMedicion_button" alignment="TOP_LEFT" layoutX="343.0" layoutY="672.0" onMouseClicked="#empezarMedicion" prefHeight="53.0" prefWidth="196.0" styleClass="charging_screen_color" text="Empezar Medición" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="50.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@src.IconPictures/plus-black-symbol.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="nombreNodo_label" layoutX="10.0" layoutY="131.0" prefHeight="44.0" prefWidth="514.0" textFill="#000000b0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="pararMedicion_button" alignment="TOP_LEFT" layoutX="711.0" layoutY="672.0" onMouseClicked="#pararMedicion" prefHeight="46.0" prefWidth="181.0" styleClass="charging_screen_color" text="Parar Medición" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="50.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@src.IconPictures/exitCross.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fx:id="exitButton" fitHeight="28.0" fitWidth="40.0" layoutX="1199.0" layoutY="1.0" onMouseClicked="#close_app" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@src.IconPictures/window-close.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="28.0" layoutY="99.0" prefHeight="550.0" prefWidth="1177.0">
+               <children>
+                  <Label layoutX="111.0" layoutY="104.0" prefHeight="128.0" prefWidth="955.0" text="PULSE LA TECLA ESC PARA FINALIZAR LA MEDICIÓN">
+                     <font>
+                        <Font name="Impact" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="198.0" layoutY="275.0" prefHeight="128.0" prefWidth="781.0" text="MANTÉNGASE DELANTE DE LA CÁMARA PARA UNA CORRECTA MEDICIÓN">
+                     <font>
+                        <Font name="Impact" size="29.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
